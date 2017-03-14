@@ -69,7 +69,7 @@ then
             # read-only mode. The variable AVAILABLE_WHEN_READONLY is set to 0.
             # => return HTTP 503
             # Shell return-code is 1
-	    curl http://$DISCOVERY_SERVICE/v2/keys/pxc-cluster/$CLUSTER_NAME/$ipaddr/?recursive=true -XDELETE 2>>$ERR_FILE >>$ERR_FILE
+	    curl http://$DISCOVERY_SERVICE/v2/keys/galera/$CLUSTER_NAME/$ipaddr/?recursive=true -XDELETE 2>>$ERR_FILE >>$ERR_FILE
         fi
 
     fi
